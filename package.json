@@ -1,0 +1,29 @@
+{
+  "name": "codeappdev_1670",
+  "version": "1.0.0",
+  "description": "Assignment 1670 application development",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiepdqgch18021/AppDev_1670.git"
+  },
+  "keywords": [
+    "1670",
+    "appdev"
+  ],
+  "author": "Duong Quang Hiep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hiepdqgch18021/AppDev_1670/issues"
+  },
+  "homepage": "https://github.com/hiepdqgch18021/AppDev_1670#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "git": "^0.1.5",
+    "hbs": "^4.1.2",
+    "mongodb": "^4.1.4"
+  }
+}
