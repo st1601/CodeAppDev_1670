@@ -15,7 +15,7 @@
     <form action="/add" method="POST" class="add">
         ID<input type="text" name="txtID">
         <br>Name <input type="text" name="txtName">
-        <br> Gmail <input type="txt" name="txtGmail">
+        <br> Gmail <input type="text" name="txtGmail">
         <br> Age <input type="text" name="txtAge">
         <br> Birthday <input type="text" name="txtBirthday">
         <br><input type="submit" value="Add Trainee">
@@ -32,12 +32,12 @@
 </tr>
 {{#each data}}
 <tr>  
-    <td>{{_id}} </td>
+    <td>{{ID}} </td>
     <td>{{Name}} </td>
     <td>{{Gmail}} </td>
     <td>{{Age}}</td>
     <td>{{Birthday}}</td>
-    <td><a href="/delete?id={{_id}}">Delete</a></td>  
+    <td><a href="/delete?id={{_id}}">Delete</a></td>
 </tr>
 {{/each}}
     </table>

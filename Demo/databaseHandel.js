@@ -26,5 +26,4 @@ async function checkUserRole(nameI, passI) {
     }
 }
 
-
-module.exports = { insertObject }
+module.exports = { insertObject, checkUserRole }
