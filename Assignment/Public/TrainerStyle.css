@@ -1,3 +1,28 @@
 .TableTraineeDetail {
     margin-top: 50px;
 }
+
+.inputGrade {
+    margin-top: 20px;
+}
+
+#addGradeButton {
+    margin-left: 150px;
+}
+
+.searchGrade {
+    margin-top: 20px;
+    margin-left: 1000px;
+    margin-bottom: 20px;
+}
+
+#tableGrade {
+    width: 95%;
+}
+
+#titleGrade {
+    text-align: center;
+    margin-bottom: 30px;
+    color: crimson;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
