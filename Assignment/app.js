@@ -8,7 +8,6 @@ const url = 'mongodb://localhost:27017'
 app.set('view engine', 'hbs')
 app.use(express.urlencoded({ extended: true }))
 
-
 app.get('/', (req, res) => {
     res.render('index')
 })
