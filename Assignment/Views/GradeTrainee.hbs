@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 <body>
 
 
-<form action="addGrade" method="post" class="inputGrade">
+<form action="trainer/addGrade" method="post" class="inputGrade">
 Name Of Trainee: <input type="text" name="txtTraineeGrade">
 <br><br>
 Type Of Grade:
@@ -22,28 +22,28 @@ Type Of Grade:
 <input type="submit" value="Add Grade" id="addGradeButton">
 </form>
 
-<form action="/searchGrade" method="POST" class="searchGrade">
+<form action="trainer/searchGrade" method="POST" class="searchGrade">
 Search Grade <input type="text" name="txtSearch">
 <input type="submit" value="search">
 </form>
 
 <h1 id="titleGrade">GRADE TABLE</h1>
 
-    <table class="table table-bordered" id="tableGrade">
+
+<table class="table table-bordered" id="tableGrade">
 <tr>
     <th>Name</th>
     <th>Grades</th>
     <th>Delete</th>
 </tr>
-
-{{#each data}}
-<tr>  
-    <td>{{Name}} </td>
-    <td>{{Type}} </td>
-    <td><a href="/delete?id={{_id}}"> Delete </a></td>
-</tr>
-{{/each}}
-    </table>
+    {{#each data}}
+    <tr>
+        <td>{{name}} </td>
+        <td>{{TypeGrade}} </td>
+        <td><a href="/Trainer/deleteGrade?id={{_id}}"> Delete </a></td>
+    </tr>
+    {{/each}}
+</table>
 
 </body>
 </html>
