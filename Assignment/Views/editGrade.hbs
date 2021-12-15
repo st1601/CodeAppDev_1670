@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Grade</title>
+</head>
+<body>
+<H1>EDIT GRADE OF TRAINEE</H1>
+
+<Form action="/Trainer/updateGrade" method="post">
+<input type="hidden" name="txtId" value="{{changeGrade._id}}">
+    Name Of Trainee: <input type="text" name="txtTraineeGrade" value="{{changeGrade.name}}">
+    <br><br>
+    Type Of Grade:
+                    <select name="typeGrade" value="{{changeGrade.TypeGrade}}">
+                    <option value="pass">Pass</option>
+                    <option value="notPass">Not Pass</option>
+                    </select>
+    <input type="submit" value="Update Grade" id="addGradeButton">
+</Form>
+</body>
+</html>
