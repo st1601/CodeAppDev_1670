@@ -4,14 +4,11 @@ const DATABASE_NAME = "Appdev1670";
 const MongoClient = require('mongodb').MongoClient;
 const url = 'mongodb://localhost:27017';
 
-router.get('trainer', (req, res) => {
+router.get('', (req, res) => {
     res.render('GradeTrainee')
 })
 
 // -- -- -- -- -- -- -- -- -- -- -- -- -- -- --GradeTrainee
-router.get('/addGrade', (req, res) => {
-    res.render('GradeTrainee')
-})
 router.post('/addGrade', async(req, res) => {
     const nameInput = req.body.txtTraineeGrade;
     const typeGrade = req.body.typeGrade;
@@ -26,8 +23,8 @@ router.post('/searchGrade', async(req, res) => {
     const searchInput = req.body.txtSearch;
     const client = await MongoClient.connect(url);
     const dbo = client.db(DATABASE_NAME);
-    const allGrade = await dbo.collection("listGrade").find({ Name: searchInput }).toArray();
-    res.redirect("/Trainer")
+    const allGrade = await dbo.collection("listGrade").find({ name: searchInput }).toArray();
+    res.render('GradeTrainee', { data: allGrade })
 });
 
 router.get('/deleteGrade', async(req, res) => {

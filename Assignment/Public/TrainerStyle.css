@@ -26,3 +26,10 @@
     color: crimson;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+
+/* --------------------------------------------------------------manage Course-*/
+
+#listCourse {
+    margin-top: 30px;
+}
