@@ -44,3 +44,7 @@
     #listCourse {
         margin-top: 30px;
     }
+    
+    #addCourseForm {
+        width: 1000px;
+    }

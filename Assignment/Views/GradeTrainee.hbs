@@ -40,7 +40,10 @@ Search Grade <input type="text" name="txtSearch">
     <tr>
         <td>{{name}} </td>
         <td>{{TypeGrade}} </td>
-        <td><a href="/Trainer/deleteGrade?id={{_id}}"> Delete </a></td>
+        <td id="menuGrade">
+            <a href="/Trainer/deleteGrade?id={{_id}}"> Delete </a>
+            <a href="/Trainer/editGrade?id={{_id}}"> Edit </a>
+        </td>
     </tr>
     {{/each}}
 </table>

@@ -10,17 +10,24 @@
 </head>
 <body>
 
-
 <header>
-<h1> </h1>
+<h1> Trainer DUONG QUANG HIEP </h1>
 </header>
 
 <section class="inputForm">
+
 
 <form action="/search" method="POST" class="searchCourse">
         Search <input type="text" name = "txtSearch">
         <input type="submit" value="search">
 </form>
+<div class="addCourseButton">
+
+<a class="btn btn-primary" href="/Trainer/addCourseButton" role="button">Add Course</a>
+<a class="btn btn-primary" href="ListTrainee.hbs" role="button">Add Trainee</a>
+</div>
+<h1 id="courseTitle">List Of Course</h1>
+
 
 <form action="/viewCourse" method="POST" id="listCourse" >   
 
@@ -38,8 +45,8 @@
 
 </table>
 </form>
-
 </section>
+
 </body>
 </html>
 {{!-- {{#each data}}
