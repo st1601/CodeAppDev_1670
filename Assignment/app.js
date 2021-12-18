@@ -12,7 +12,26 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
+app.post('/login', async(req, res) => {
+    const name = req.body.txtName
+    const pass = req.body.txtPass
+    const role = await checkUserRole(name, pass)
+    if (role == -1) {
+        res.render('login')
+    } else {
+        req.session["User"] = {
+            name: name,
+            role: role
+        }
+        console.log("Ban dang dang nhap voi quyen la: " + role)
+        res.redirect('/')
+    }
+})
 
+app.get('/login', (req, res) => {
+    res.render('login')
+})
+S
 // app.post('/add', async(req, res) => {
 //     const idInput = req.body.txtID;
 //     const nameInput = req.body.txtName;
