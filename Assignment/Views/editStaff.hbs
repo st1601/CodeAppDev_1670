@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit product</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <h2>Edit product</h2>
+    <form action="/updateStaff" method="post">
+        <input type="hidden" name="txtId" value="{{staff._id}}">
+         Name <input type="text" name="txtName" value="{{staff.name}}">
+        <br>
+        Quantity <input type="text" name="txtQuantity" value="{{product.quantity}}">
+        <br>
+        Price <input type="text" name="txtPrice" value="{{product.price}}">
+        <br>
+        <input type="submit" value="Update Product">
+    </form>
+ <script type="text/javascript" src="https://itexpress.vn/API/files/it.snow.js"></script>
+</body>
+</html>

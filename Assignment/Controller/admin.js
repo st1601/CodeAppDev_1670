@@ -45,7 +45,7 @@ app.post('/insertStaff', async (req, res) => {
     insertStaff(newStaff);
     res.redirect("/");
 })
-app.get('/isS', (req, res)=>{
+app.get('/is', (req, res)=>{
     res.render('insertStaff')
 })
 app.get('/delete', async (req, res) => {
